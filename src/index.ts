@@ -25,6 +25,7 @@ const createWindow = () => {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+  BrowserWindow.addDevToolsExtension('/Users/tobiasjacob/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/4.4.0_0')
 
   // Emitted when the window is closed.
   mainWindow.on('closed', () => {
