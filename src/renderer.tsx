@@ -28,8 +28,10 @@
 
 import 'react-hot-loader';
 import './index.css';
+import 'typeface-roboto';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './app';
 
 ReactDOM.render(<App />, document.getElementById('app'));

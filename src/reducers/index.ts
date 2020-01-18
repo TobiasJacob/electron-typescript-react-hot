@@ -1,7 +1,19 @@
-export default function todos(state: string[] = [], action: { type: string }) {
+export interface HistoryType extends Array<{
+    date: string,
+    songs: [
+        {
+            title: string,
+            artist: string
+        }?
+    ]
+}> { };
+
+export interface StateType {
+    history: HistoryType
+}
+
+export default function todos(state: StateType = { history: [{ date: '20.10.20', songs: [{ title: 'asdf', artist: 'asdf' }] }] }, action: { type: string }) {
     switch (action.type) {
-        case 'ADD':
-            return ['New item', ...state]
         default:
             return state
     }
