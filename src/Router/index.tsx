@@ -1,3 +1,5 @@
+import { hot } from 'react-hot-loader';
+
 import React, { useState } from 'react';
 import { MemoryRouter, Switch, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
@@ -32,4 +34,4 @@ const Router = () => {
 	);
 };
 
-export default Router;
+export default hot(module)(Router);

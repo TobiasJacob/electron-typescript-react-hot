@@ -5508,6 +5508,11 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
+seratolibraryparser@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/seratolibraryparser/-/seratolibraryparser-1.0.4.tgz#15d25c544abf1642ebc8fa7109d3d1cd073758ba"
+  integrity sha512-xpHLUJrBBtSEBxqUNUR2pskvgyta9d8oB5jrMizzmofLqmqJql0yJiWQbMNfAZ6IYHdtHy2s+7PO1LvfzEicZw==
+
 serialize-error@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-5.0.0.tgz#a7ebbcdb03a5d71a6ed8461ffe0fc1a1afed62ac"

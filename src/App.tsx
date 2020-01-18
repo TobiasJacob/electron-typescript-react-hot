@@ -2,7 +2,8 @@ import { hot } from 'react-hot-loader';
 import React from 'react';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -14,7 +15,7 @@ import rootReducer from './Reducers';
 
 import Router from './Router';
 
-const store = createStore(rootReducer, composeWithDevTools());
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 const theme = createMuiTheme({
 	palette: {
